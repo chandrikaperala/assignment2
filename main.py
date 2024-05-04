@@ -108,7 +108,7 @@ def main():
                         save_text_to_file(text, output_file_path)
 
                         st.success("Text extraction complete!")
-                        st.download_button(label="Download Text File", data=open(output_file_path, "rb"), file_name="extracted_text.txt")
+                        st.download_button(label="Download Text File", file_name="extracted_text.txt")
 
     # Sidebar for uploading .txt documents
     st.sidebar.title("Upload .txt Document")
